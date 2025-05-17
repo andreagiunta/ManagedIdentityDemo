@@ -1,0 +1,8 @@
+{
+  "Endpoint": "https://<Your custom endpoint or 'api'>.cognitive.microsofttranslator.com",
+  "Scopes": "<a comma separated list of scopes for the token to obtain from EntraID>",
+  "ResourceId": "<ResourceID of your azure cognitive service - Available on azure portal under your Cognitive service properties>",
+  "Region": "<Region where your CognitiveService is registered>",
+  "ManagedIdentityClientId": "<Optional Managed Identity Client Id>",
+  "TenantId": "<Cognitive service Azure Tenant Id>"
+}

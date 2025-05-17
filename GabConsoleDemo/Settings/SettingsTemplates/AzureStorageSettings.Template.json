@@ -1,0 +1,5 @@
+{
+  "StorageAccountEndpoint": "https://<TargetStorageAccountName>.core.windows.net>",
+  "StorageAccountContainerName": "<Container Name>",
+  "ManagedIdentityClientId": "<Optional Managed Identity Client Id>"
+}

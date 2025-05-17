@@ -1,0 +1,5 @@
+{
+  "StorageAccountEndpoint": "https://sademoidentity.blob.core.windows.net",
+  "StorageAccountContainerName": "democontainer",
+  "ManagedIdentityClientId": ""
+}
