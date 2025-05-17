@@ -1,8 +1,0 @@
-{
-  "Endpoint": "https://api.cognitive.microsofttranslator.com",
-  "Scopes": "https://cognitiveservices.azure.com/.default",
-  "ResourceId": "/subscriptions/7ee83fde-7f0f-41e1-9e63-590891aad0b0/resourceGroups/Speech/providers/Microsoft.CognitiveServices/accounts/angiunta-learning",
-  "Region": "centralus",
-  "ManagedIdentityClientId": "",
-  "TenantId": "c7bc7a70-86e5-449f-841a-dd466096d371"
-}

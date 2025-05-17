@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/GabConsoleDemo/Settings/SettingsConfig/AzureStorageSettings.json
+/GabConsoleDemo/Settings/SettingsConfig/CognitiveServiceSettings.json
