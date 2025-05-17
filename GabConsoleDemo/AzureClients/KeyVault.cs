@@ -11,12 +11,4 @@ namespace GabConsoleDemo.AzureClients
     {
     }
 
-    internal class AppConfigClient
-    {
-    }
-
-    internal class ServiceBusClient
-    {
-    }
-
 }
