@@ -8,7 +8,7 @@ namespace GabConsoleDemo.Settings
 {
     /// <summary>
     /// As this is a demo on GitHub, settings for each Azure service are stored in a local JSON file which is not committed to the repository.
-    /// </summary>
+    /// </summary> 
     internal interface ISettings<T> where T:struct
     {
         ///// <summary>
