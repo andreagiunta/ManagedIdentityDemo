@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /GabConsoleDemo/Settings/SettingsConfig/AzureStorageSettings.json
 /GabConsoleDemo/Settings/SettingsConfig/CognitiveServiceSettings.json
+/GabConsoleDemo/Settings/SettingsConfig/KeyVaultSettings.json

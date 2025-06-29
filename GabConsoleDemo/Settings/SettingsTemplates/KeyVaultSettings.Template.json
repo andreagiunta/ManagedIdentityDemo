@@ -1,0 +1,4 @@
+{
+  "KeyVaultEndpoint": "<Key vault endpoint in format of >",
+  "ManagedIdentityClientId": "<Optional Managed Identity Client Id>"
+}

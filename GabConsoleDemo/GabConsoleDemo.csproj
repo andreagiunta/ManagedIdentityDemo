@@ -11,6 +11,8 @@
     <PackageReference Include="Azure.AI.Translation.Document" Version="2.0.0" />
     <PackageReference Include="Azure.AI.Translation.Text" Version="1.0.0" />
     <PackageReference Include="Azure.Identity" Version="1.14.0-beta.4" />
+    <PackageReference Include="Azure.Security.KeyVault.Certificates" Version="4.8.0" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.8.0" />
     <PackageReference Include="Azure.Storage.Blobs" Version="12.24.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
@@ -20,10 +22,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Settings\SettingsConfig\KeyVaultSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Settings\SettingsConfig\AzureStorageSettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Settings\SettingsConfig\CognitiveServiceSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Settings\SettingsTemplates\KeyVaultSettings.Template.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Settings\SettingsTemplates\CognitiveServiceSettings.Template.json">

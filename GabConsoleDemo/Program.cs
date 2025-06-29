@@ -26,9 +26,14 @@ internal class Program
             //Call Cognitive services translation.
             Console.Clear();
             await Translate();
+            
             //Enumerate blob from a container using Managed Identity
             Console.Clear();
             await EnumerateBlobs();
+
+            //Key vault management
+            Console.Clear();
+            await KeyVaultOperations();
 
         }
         catch (Exception ex)
@@ -70,4 +75,22 @@ internal class Program
             throw;
         }
     }
+    
+    static async Task KeyVaultOperations()
+    {
+        try
+        {
+            KeyVaultClient _keyVaultClient = new KeyVaultClient();
+            var secrets = await _keyVaultClient.ListSecrets();
+            var certificates = await _keyVaultClient.ListCertificates();
+            await _keyVaultClient.GetCertificate(certificates.FirstOrDefault());
+            await _keyVaultClient.GetSecret(secrets.FirstOrDefault());
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            throw;
+        }
+    }
+
 }
