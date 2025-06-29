@@ -34,7 +34,6 @@ internal class Program
             //Key vault management
             Console.Clear();
             await KeyVaultOperations();
-
         }
         catch (Exception ex)
         {
