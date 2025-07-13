@@ -1,0 +1,5 @@
+{
+  "FullyQualifiedNamespace": "https://{yourFQDN}.servicebus.windows.net/",
+  "ManagedIdentityClientId": "{yourManagedIdentityClientId}",
+  "TenantId": "{yourTenantId}"
+}

@@ -23,10 +23,14 @@ internal class Program
 
         try
         {
+            //Send and receive messages from Azure Service Bus
+            Console.Clear();
+            await ServiceBusOperations();
+
             //Call Cognitive services translation.
             Console.Clear();
             await Translate();
-            
+
             //Enumerate blob from a container using Managed Identity
             Console.Clear();
             await EnumerateBlobs();
@@ -84,6 +88,27 @@ internal class Program
             var certificates = await _keyVaultClient.ListCertificates();
             await _keyVaultClient.GetCertificate(certificates.FirstOrDefault());
             await _keyVaultClient.GetSecret(secrets.FirstOrDefault());
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            throw;
+        }
+    }
+
+    static async Task ServiceBusOperations()
+    {
+        try
+        {
+            
+            ServiceBusMIClient _serviceBusClient = new ServiceBusMIClient();
+            Console.WriteLine("Sending message to Service Bus");
+            await _serviceBusClient.SendMessageAsync("DemoQueue", "Hello, Service Bus!");
+            var messages = await _serviceBusClient.ReceiveMessagesAsync("DemoQueue");
+            foreach (var message in messages)
+            {
+                Console.WriteLine($"Received message: {message}");
+            }
         }
         catch (Exception ex)
         {
