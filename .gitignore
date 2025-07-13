@@ -364,3 +364,5 @@ FodyWeavers.xsd
 /GabConsoleDemo/Settings/SettingsConfig/AzureStorageSettings.json
 /GabConsoleDemo/Settings/SettingsConfig/CognitiveServiceSettings.json
 /GabConsoleDemo/Settings/SettingsConfig/KeyVaultSettings.json
+/GabConsoleDemo/Settings/SettingsConfig/ServiceBusSettings.Template.json
+/GabConsoleDemo/Settings/SettingsConfig/ServiceBusSettings.json
